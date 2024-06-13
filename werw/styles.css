@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fafafa;
+  font-family: Poppins, sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+/* end of css reset */
+
+:root {
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+}
+
+.reliable {
+  font-weight: 200;
+  text-align: center;
+  margin-top: 100px;
+}
+.powered {
+  font-size: 2.3rem;
+  text-align: center;
+}
+.our {
+  color: hsl(229, 6%, 66%);
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.card-container {
+  display: flex;
+
+  gap: 20px;
+  align-items: center;
+  width: 90vw;
+  margin: auto;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  max-width: 400px;
+  padding: 32px;
+  background-color: white;
+  -webkit-box-shadow: 10px 10px 54px -21px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 54px -21px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 54px -21px rgba(0, 0, 0, 0.75);
+}
+
+.border {
+  width: calc(100% + 64px);
+  margin-left: -32px;
+  margin-top: -32px;
+  margin-bottom: 30px;
+  height: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.supervisor-border {
+  background-color: var(--Cyan);
+}
+.team-border {
+  background-color: var(--Red);
+}
+.karma-border {
+  background-color: var(--Orange);
+}
+.calculator-border {
+  background-color: var(--Blue);
+}
+.card-h2 {
+  margin-bottom: 15px;
+}
+.card-p {
+  color: hsl(229, 6%, 66%);
+  margin-bottom: 1rem;
+}
+img {
+  width: 75px;
+  align-self: flex-end;
+  justify-self: flex-end;
+}
+.column-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.column-1,
+.column-2,
+.column-3 {
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 893px) {
+  * {
+    flex-direction: column;
+  }
+}
